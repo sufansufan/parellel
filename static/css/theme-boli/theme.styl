@@ -1,0 +1,207 @@
+bg(opacity = .4){
+    rgba(0,0,0, opacity)
+}
+.boli
+    ::-webkit-scrollbar {
+        width: 7px;
+        height: 7px;
+        overflow: hidden;
+        background: #000;
+    }
+
+    ::-webkit-scrollbar-corner {
+        background: #000;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #000;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    body
+        background none
+        .el-dropdown-menu,.el-select-dropdown__list
+            background bg(.9)
+            li
+              color #fff
+        .el-select-dropdown__list>li
+            color #aaa
+        .el-popper[x-placement^=bottom] .popper__arrow
+            top -7px
+        .el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover,
+        .el-select-dropdown__item.hover, .el-select-dropdown__item:hover
+            color #fff
+            background #272727
+        // button 定制
+        .el-button--primary
+            background bg() !important
+            border 1px solid #ccc !important
+            color #fff !important
+            border-radius 4px !important
+            &:focus, &:hover,
+            &.is-active, &:active
+                border-color #444
+                background bg() !important
+        .el-button--info.is-disabled, .el-button--info.is-disabled:active, .el-button--info.is-disabled:focus, .el-button--info.is-disabled:hover
+            background #2d2e2f
+            color #565656
+            border-color #565656
+            border-radius 4px !important
+        .el-button--text
+            color #fff
+        // input 定制
+        .el-input__inner,
+        .el-button:not(.el-button--text),
+        .class-query .el-input-group__append,
+        .el-input-group__append, .el-input-group__prepend
+            background bg()
+            border 1px solid bg()
+            color #ccc
+        .el-select:hover .el-input__inner,
+        .el-select .el-input.is-focus .el-input__inner,
+        .el-select .el-input__inner:focus
+            border-color #777
+        // checkbox 定制
+        .el-checkbox__inner
+            background none;
+            border-color #607577
+        .el-checkbox
+            color #fff
+        // table 定制
+        .el-table
+            &, & thead tr
+                background none
+        .el-table__fixed-header-wrapper thead tr
+            background bg()
+        .el-table__expanded-cell,
+        .el-table__footer-wrapper, .el-table__header-wrapper, .el-table tr,
+        .el-table tr:hover,
+        .el-table__body tr.hover-row>td
+            background bg()
+            color #ccc
+        .el-table th,.el-table--enable-row-hover .el-table__body tr:hover>td,
+        .el-table--border::after, .el-table--group::after, .el-table::before
+            background none
+            color #fff
+        .el-table--striped .el-table__body tr.el-table__row--striped td
+            background bg(.3)
+        .el-table--border
+            border-color #000
+        // 翻页定制
+        .el-pagination__total,.el-pagination__jump
+            color #fff
+        .el-pagination button.disabled,.el-pager li,
+        .el-pagination .btn-next, .el-pagination .btn-prev
+            background bg()
+            color #a9a4a4
+        .el-pager li.btn-quicknext, .el-pager li.btn-quickprev
+            color #a9a4a4
+        .el-pager li.active, .el-pager li:hover,
+        .el-pagination .btn-next, .el-pagination .btn-prev
+            color #fff !important
+        .el-table__fixed-right, .el-table__fixed
+            &::before
+                background none
+        // loading 定制
+        .el-loading-mask
+            background-color: bg(.9);
+        .header
+            background bg()
+            .el-dropdown
+                color #fff
+            .breadcrumb
+                background none
+                >div
+                    background none
+                .el-breadcrumb__inner, .el-breadcrumb__inner a,
+                .el-breadcrumb__item:last-child .el-breadcrumb__inner,
+                .el-breadcrumb__separator
+                    color #fff
+        .content
+            background-color #044146
+            >.content-warp
+                background #044146 url(../static/css/theme-boli/right-logo.png) right top no-repeat !important
+        .wrapper
+            background #044146
+            .content-warp
+                background #044146
+        .sidebar
+            z-index 3
+            background bg() url(../static/css/theme-boli/left-logo.png) center bottom no-repeat
+        .el-submenu, .el-menu-item
+        ,.el-submenu .el-menu,
+        .el-menu el-menu--inline
+        ,.sidebarCon>ul
+        ,.el-submenu.is-opened li.is-active
+        ,.el-submenu__title
+        ,.el-submenu .el-menu-item:hover,
+        .el-submenu__title:hover
+            background none
+        .left-nav-circle,
+        .el-submenu.is-opened li.is-active .left-nav-circle
+            color #fff
+            vertical-align: initial
+        .el-submenu .el-menu>li,
+        .el-menu > .el-submenu > .el-menu > .el-submenu > .el-submenu__title,
+        .el-submenu__title i, .sidebarCon>.el-menu>.el-submenu>.el-submenu__title
+            color #fff !important
+        .el-submenu.is-opened li.is-active
+            color #fff !important
+            background bg(.4)
+        .el-submenu.is-opened>.el-submenu__title
+            background bg(.4) !important
+        .el-menu > .el-submenu > .el-menu > .el-submenu.el-submenu.is-opened>.el-submenu__title
+            background none !important
+            color #fff !important
+        .studetn-info
+            background bg()
+            color #fff
+            > .info-list > div > span
+                background bg()
+                color #fff
+            > .info-list p
+                border-color bg()
+                b
+                    background bg()
+                    color #fff
+                    >span
+                        color #fff
+        .el-menu--horizontal
+            >.el-menu-item
+                background none !important
+                &:not(.is-disabled):focus, &:not(.is-disabled):hover
+                color #a9a2a2
+                &.is-active
+                    color #fff
+                    border-color #fff
+            background bg() !important
+            border none
+        .lesson-single,.title-warp
+            background bg(.9)
+            color #fff
+        .title-warp,.lesson-single,.lesson-single-warp:not(.narrow)
+                box-shadow 0 0 10px #000
+        .el-col-3
+            color #fff
+        .el-dialog
+            background bg(.9)
+            color #fff
+            .el-dialog__title
+                color #fff
+            .el-tabs__active-bar
+                background #fff
+            .el-tabs__item
+                color #a9a4a4
+                &.is-active
+                    color #fff
+            .el-tabs__nav-wrap::after
+                background-color #444
+            .el-input.is-disabled .el-input__inner
+                background bg()
+                border-color #444
+                color #fff !important
+            .el-dialog__body
+                color #bbb
+        .v-modal
+            opacity 1
+            background bg(.2)

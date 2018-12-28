@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/3.7.2/echarts-en.js"></script>
+</head>
+<body>
+    <div id="chart" style="height: 300px;"></div>
+<script>
+    $(function () {
+        let chart = echarts.init(document.getElementById("chart"));
+        option = {
+            title: {
+                text: '某楼盘销售情况',
+                subtext: '纯属虚构',
+                link:"http://www.baidu.com"
+            },
+            grid:{
+                show:true,
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['意向','预购','成交',]
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    magicType: {show: true, type: ['stack', 'tiled']},
+                    saveAsImage: {show: true}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                name:"aAxisName",
+                nameGap:33,
+                axisPointer:{
+                    show:true,
+                },
+                boundaryGap: false,
+                data: ['周一','周二','周三','周四','周五','周六','周日',2]
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                name: '成交',
+                type: 'line',
+                smooth: true,
+                data: [10, 12, 21, 54, 260, 830, 710]
+            },{
+                name: '预购',
+                type: 'line',
+                smooth: true,
+                data: [30, 182, 434, 791, 390, 30, 10]
+            },{
+                name: '意向',
+                type: 'line',
+                smooth: true,
+                data: [1320, 1132, 601, 234, 120, 90, 20]
+            }]
+        };
+
+        chart.setOption(option);
+        chart.on('click', function (params) {
+            console.log(params);
+        });
+        chart.on('legendselectchanged', function (params) {
+            console.log(params);
+        });
+    })
+</script>
+</body>
+</html>

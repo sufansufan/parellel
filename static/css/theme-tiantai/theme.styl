@@ -1,0 +1,60 @@
+.tiantai
+    body
+        background none
+        // button 定制
+        .el-button--primary
+            background -webkit-linear-gradient(top,#ffffff 0%,#ebebeb 90%,#F3F3F3 100%) !important
+            border 1px solid #888
+            color #444 !important
+            border-radius 4px !important
+            &:focus, &:hover,
+            &.is-active, &:active
+                border-color #444
+                color #000 !important
+                background -webkit-linear-gradient(top,#ebebeb,#F3F3F3) !important
+        .header
+            background url(../static/css/theme-tiantai/head-bg-repx.jpg) repeat-x
+            .el-dropdown
+                color #fff
+            .breadcrumb
+                background url(../static/css/theme-tiantai/head-bg-left.jpg) -28px 0 no-repeat
+                >div
+                    background none
+                .el-breadcrumb__inner, .el-breadcrumb__inner a,
+                .el-breadcrumb__item:last-child .el-breadcrumb__inner,
+                .el-breadcrumb__separator
+                    color #fff
+        .content
+            background #fff
+        .wrapper
+            background url(../static/css/theme-tiantai/left-bom.gif) 0 326px repeat-y
+            .content-warp
+                background #fff
+        .sidebar
+            z-index 3
+            background url(../static/css/theme-tiantai/left-top.gif) 0 67px no-repeat
+        .el-submenu, .el-menu-item
+        ,.el-submenu .el-menu,
+        .el-menu el-menu--inline
+        ,.sidebarCon>ul
+        ,.el-submenu.is-opened li.is-active
+        ,.el-submenu__title
+        ,.el-submenu .el-menu-item:hover,
+        .el-submenu__title:hover
+            background none
+        .left-nav-circle,
+        .el-submenu.is-opened li.is-active .left-nav-circle
+            color #FFE7CB
+            vertical-align: initial
+        .el-submenu .el-menu>li,
+        .el-menu > .el-submenu > .el-menu > .el-submenu > .el-submenu__title,
+        .el-submenu__title i, .sidebarCon>.el-menu>.el-submenu>.el-submenu__title
+            color #FFE7CB !important
+        .el-submenu.is-opened li.is-active
+            color #FFE7CB !important
+            background url(../static/css/theme-tiantai/selected-item.gif) 35px 3px no-repeat
+        .el-submenu.is-opened>.el-submenu__title
+            background url(../static/css/theme-tiantai/selected.gif) 8px 11px no-repeat !important
+        .el-menu > .el-submenu > .el-menu > .el-submenu.el-submenu.is-opened>.el-submenu__title
+            background none !important
+            color #FFE7CB !important
